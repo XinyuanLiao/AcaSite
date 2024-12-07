@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinyuan Liao - Academic Homepage</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">XL</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#education">Education</a>
+                    <a href="#awards">Awards and Honors</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image-container">
+                    <img class="profile-image" src="https://github.com/XinyuanLiao/AcaSite/raw/main/assets/lxy.jpg" alt="Xinyuan Liao" />
+                </div>
+                <div class="profile-info">
+                    <h1>Xinyuan Liao</h1>
+                    <h2>Ph.D. Student</h2>
+                    <p>The Hong Kong Polytechnic University</p>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=IdfPU1UAAAAJ&hl=en" target="_blank" class="social-link">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/XinyuanLiao" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        I received a B.Eng. degree in Computer Science and Technology from Ocean University of China in 2022 
+                        and received an M.S. degree in Information and Communication Engineering from Northwestern Polytechnical University in 2025. 
+                        Currently, I am a Ph.D. student at the Department of Electrical and Electronic Engineering (EEE) of The Hong Kong Polytechnic 
+                        University (PolyU), jointly supervised by Prof. Zhang Yi and Prof. Liu Junwen.
+                        My research interests mainly focus on physics-informed machine learning for wide-bandgap (WBG) semiconductors reliability 
+                        assessment. In addition, I also interested in the foundation model for power electronics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Research Interests</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Physics-Informed Machine Learning</h3>
+                        <p>Using physics-based models to guide machine learning models, improving their generalization and interpretability in engineering applications.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Power Electronics Reliability</h3>
+                        <p>Studying the long-term performance and reliability of power electronic devices and systems, including failure prediction and optimization.</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Foundation Model</h3>
+                        <p>Developing large pre-trained models that can be fine-tuned for a variety of downstream tasks, improving performance across domains.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img class="school-logo" src="https://github.com/XinyuanLiao/AcaSite/raw/main/assets/polyu.png" alt="PolyU" />
+                            <div class="timeline-info">
+                                <h3>The Hong Kong Polytechnic University</h3>
+                                <p>Ph.D. in Power and Energy Systems</p>
+                                <span class="timeline-period">2025.09 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img class="school-logo" src="https://github.com/XinyuanLiao/AcaSite/raw/main/assets/polyu.png" alt="PolyU" />
+                        <div class="timeline-info">
+                            <h3>The Hong Kong Polytechnic University</h3>
+                            <p>R.A. in Power and Energy Systems</p>
+                            <span class="timeline-period">2025.05 - 2025.09</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img class="school-logo" src="https://github.com/XinyuanLiao/AcaSite/raw/main/assets/nwpu.jpg" alt="NWPU" />
+                            <div class="timeline-info">
+                                <h3>Northwestern Polytechnical University</h3>
+                                <p>M.S. in Information and Communication Engineering</p>
+                                <span class="timeline-period">2022.09 - 2025.04</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img class="school-logo" src="https://github.com/XinyuanLiao/AcaSite/raw/main/assets/ouc.png" alt="OUC" />
+                            <div class="timeline-info">
+                                <h3>Ocean University of China</h3>
+                                <p>B.Eng. in Computer Science and Technology</p>
+                                <span class="timeline-period">2018.09 - 2022.06</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Awards and Honors</h2>
+                <div class="awards-grid">
+                    <div class="awards-card">
+                        <h3>National Scholarship for Graduated</h3>
+                        <p class="award-issuer"><strong>Northwestern Polytechnical University, 2024</strong></p>
+                    </div>
+                    <div class="awards-card">
+                        <h3>First-Class Scholarship</h3>
+                        <p class="award-issuer"><strong>Northwestern Polytechnical University, 2024</strong></p>
+                    </div>
+                    <div class="awards-card">
+                        <h3>Provincial First Prize</h3>
+                        <p class="award-issuer"><strong>"Challenge Cup" National College Student Curricular Academic Science and Technology Works Competition, 2023</strong></p>
+                    </div>
+                    <div class="awards-card">
+                        <h3>First-Class Scholarship</h3>
+                        <p class="award-issuer"><strong>Ocean University of China, 2021</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <h3>Neural Dynamics Model for Temperature Estimation of Permanent Magnet Synchronous Motor</h3>
+                        <p class="authors"><strong>Xinyuan Liao</strong>, Shaowei Chen, Yunxiang Long, Shuai Zhao*</p>
+                        <p class="journal">IEEE Transactions on Vehicular Technology, 2025</p>
+                        <div class="publication-links">
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1474034623003233" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="https://github.com/ms140429/pfNDM" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>Remaining useful life with self-attention assisted physics-informed neural network</h3>
+                        <p class="authors"><strong>Xinyuan Liao</strong>, Shaowei Chen, Pengfei Wen, Shuai Zhao*</p>
+                        <p class="journal">Advanced Engineering Informatics, 2023</p>
+                        <div class="publication-links">
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1474034623003233" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="publication-card">
+                        <h3>Gated Recurrent Units-Assisted State-Space Modeling for Electric Vehicle Temperature Prediction</h3>
+                        <p class="authors"><strong>Xinyuan Liao</strong>, Shaowei Chen, Shuai Zhao*</p>
+                        <p class="journal">PCIM Europe Conference Proceedings, 2024</p>
+                        <div class="publication-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10653772" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>xny@connect.polyu.hk</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>The Hong Kong Polytechnic University<br>Hung Hom, Kowloon<br>Hong Kong</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Xinyuan Liao. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
